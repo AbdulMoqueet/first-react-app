@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.material-fix {
+  display: flex;
+  align-items: center;
+}
+
+.material-icons {
+  background: #7f00ff; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 0.5rem;
+}
+
+.main-card {
+  background-color: #ffffff;
+  width: 85vw;
+  max-width: 600px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1),
+    0 18px 14px 0px rgba(161, 123, 123, 0.1);
+  border-radius: 0.5rem;
+
+  .flex-container {
+    display: flex;
+  }
+
+  .front-card {
+    width: 40%;
+    background: linear-gradient(to right, #e100ff, #7f00ff);
+    background-image: url(https://abdul-moqueet.github.io/solo-files/1K-1St-React/image.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2),
+      0 18px 14px 0px rgba(161, 123, 123, 0.1);
+  }
+
+  .left-card {
+    width: 60%;
+
+    .wrapper {
+      padding: 0 1rem;
+    }
+
+    .heading {
+      margin-top: 3rem;
+      font-size: 1.8em;
+      background: #7f00ff; /* fallback for old browsers */
+      background: linear-gradient(
+        to right,
+        #e100ff,
+        #7f00ff
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .summary {
+      text-align: justify;
+      font-size: 0.9em;
+      margin-bottom: 1rem;
+    }
+    p {
+      padding-bottom: 0.3rem;
+    }
+    .text {
+      font-family: "Ubuntu", sans-serif;
+    }
+  }
+
+  .bottom {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 2rem;
+    padding-top: 1.2rem;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span {
+      font-size: 1.4em;
+      margin-right: 0.2rem;
+      display: block;
+    }
+  }
+}
